@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <title>CREDIT RISK ANALYSIS</title>
+  </head>
+
+  <body>
+    <h1><div style="text-align:center"><font color="blue">CREDIT RISK ANALYSIS</font></div></h1>
+    <hr>
+    </br>
+    <h2><div style="text-align:center">Enter the values for the following parameters</div></h2>
+    </br>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-6'>
+          <form method="POST" action="/predict">
+            <div class="form-group">
+              <label for="age"><p class="font-weight-bold">age</p></label>
+              <input type="text" name="age">
+              <small id="Help" class="form-text text-muted">AGE RANGE[20-44]</small>
+              </div>
+
+              <div class="form-group">
+                <label for="ed"><p class="font-weight-bold">ed</p></label>
+                <input type="text" name="ed">
+                <small id="Help" class="form-text text-muted">ed[1,2,3]</small>
+                </div>
+
+                <div class="form-group">
+                  <label for="employ"><p class="font-weight-bold">employ</p></label>
+                  <input type="text" name="employ">
+                  <small id="Help" class="form-text text-muted">RANGE[0-18]</small>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="address"><p class="font-weight-bold">address</p></label>
+                    <input type="text" name="address">
+                    <small id="Help" class="form-text text-muted">RANGE[0-20]</small>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="income"><p class="font-weight-bold">income</p></label>
+                      <input type="text" name="income">
+                      <small id="Help" class="form-text text-muted">RANGE[14-57]</small>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="creddebt"><p class="font-weight-bold">creddebt</p></label>
+                        <input type="text" name="creddebt">
+                        <small id="Help" class="form-text text-muted">[0-3]</small>
+                        </div>
+
+                      <div class="form-group">
+                        <label for="othdebt"><p class="font-weight-bold">othdebt</p></label>
+                        <input type="text" name="othdebt">
+                        <small id="Help" class="form-text text-muted">[0-6]</small>
+                        </div>
+
+                        <input class='btn btn-primary' type='submit' value='Submit'>
+            </form>
+
+          </div>
+          </div>
+          </div>
+  </body>
+
+</html>
